@@ -1,0 +1,28 @@
+﻿Figure panel,source_data,processed_data,preprocessing_script,plot_script,stats_script,checked
+Figure 1d,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 1c,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 1e,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 1h,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 2c,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 2f,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 2i,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 1 - supplement figure 2l,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 2c,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 4c,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 4f,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 4 - supplement figure 1c,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 4 - supplement figure 1f,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 4 - supplement figure 2c,"data/rawdataset.csv, data/tailQuantification.csv, chargeTransferTailExp.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 4 - supplement figure 2d,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 5c,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 5f,DOR PV ACC Counting.xls,DOR PV ACC Counting,nan,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 6,data/data_cellAttached_experiments.mat,data/data_cellAttaced_experiments.mat,analyze_cellAttached_experiments.m,analyze_cellAttached_experiments.m,analyze_cellAttached_experiments.m,TRUE
+Figure 6 - supplement figure 1,data/data_cellAttached_experiments.mat,data/data/data_cellAttached_latencies.csv,analyze_cellAttached_experiments.m,analyze_cellAttached_latencies.r,analyze_cellAttached_latencies.r,TRUE
+Figure 7d,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 7 - supplement figure 1a,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Figure 7 - supplement figure 1b,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_wholeCell_experiments.r,analyze_wholeCell_experiments.r,TRUE
+Rebuttal figure 1c,data/data_rebuttal_experiments.mat,data/data_rebuttal_fig1.csv,analyze_rebuttal_experiments.m,analyze_rebuttal_experiments.m,analyze_rebuttal_experiments.r,TRUE
+Rebuttal figure 2,"data/rawdataset.csv, data/tailQuantification.csv",data/effectdataset.csv,preprocess_rawdataset.r,analyze_rebuttal_experiments.r,analyze_rebuttal_experiments.r,TRUE
+Rebuttal figure 3,data/data_cellAttached_experiments.mat,data/data_cellAttaced_experiments.mat,analyze_cellAttached_experiments.m,analyze_cellAttached_experiments.m,analyze_cellAttached_experiments.m,TRUE
+Rebuttal figure 4d,data/data_rebuttal_experiments.mat,nan,analyze_rebuttal_experiments.m,analyze_rebuttal_experiments.m,analyze_rebuttal_experiments.m,TRUE
+Rebuttal figure 4e,data/data_rebuttal_experiments.mat,nan,analyze_rebuttal_experiments.m,analyze_rebuttal_experiments.m,analyze_rebuttal_experiments.m,TRUE

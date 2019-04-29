@@ -1,0 +1,108 @@
+% Author:Bart C Jongbloets
+% Last version: 2019-04-24
+% Tested on Matlab: r2014a - r2018b
+% Contact: b.c.jongbloets@gmail.com
+
+Install and setup instructions:
+1) Download and save all matlab script files (.m) into one folder.
+2) Start Matlab (script has been ran/tested on version r2014a - r2018b)
+3) Run: pathtool
+4) Select: add with subfolders
+5) In the browser select the folder you defined in step 1.
+6) Select: Save
+7) Select: Close
+
+You should now have all script in the path. Meaning that you can type: bcj_
+and press 'Tab'. There should now appear a list of functions/scripts
+(eg. bcj_XPSCParam, bcj_wranglAxgx) that you can run.
+
+Source data:
+The source dataset was saved as a .mat file containing metadata and data in a
+nested-matlab structure called dfEla. All metadata was manually input in this
+dataset.
+Due to the size of this file, the file is not included in the repository, essentially
+rawdataset.csv is the same without the raw traces and nested metadata.
+
+Structure contains the following columns:
+{'cellID'          }
+{'animalID'        }
+{'genoType'        }
+{'cellType'        }
+{'recordLayer'     }
+{'recordRegion'    }
+{'stimSource'      }
+{'stimChannel'     }
+{'conditionName'   }
+{'signal'          }
+{'samplerate'      }
+{'averageTrace'    }
+{'allTraces'       }
+{'onset'           }
+{'risetime'        }
+{'slope'           }
+{'amplitude'       }
+{'onset2peakTime'  }
+{'halfwidth'       }
+{'decay'           }
+{'slope2ms'        }
+{'slope3ms'        }
+{'area'            }
+{'test1DrugName'   }
+{'waveformSequence'}
+{'meta'            }
+{'stimOnset'       }
+
+The dataset is subsequently saved as an .csv (excluding the nested data columns:
+averageTrace, allTraces, and meta).
+This dataset is called "rawdataset.csv" and is included in this repository.
+
+Functions:
+Main users function/scripts are:
+bcj_XPSCParam: used to extract waveform/trace parameters such as onset,
+    amplitude etc.
+bcj_wranglAxgx: used to extract waveforms/traces and affiliated metadata from
+    axgx files (axograph X software) and csv (user-annotated metadata).
+
+Helper functions:
+bcj_slidingPeak.m: used calculate the peak amplitude based on a smoothened
+    waveform/trace (smoothened using a x ms window to average the data).
+importaxo: used to import axgx files. Script is work from MJ Russo and
+    others.
+movingmean: used to smoothen the waveform/trace. Script is work from Glen
+    Mackey.
+
+
+Pipeline:
+Two experimenters had different hardware and software setups, see manuscript
+Birdsong, Jongbloets et al. eLife 2019.
+
+Bart C Jongbloets:
+Raw waveform traces obtained from whole-cell/cell-attached patch-clamp
+recordings using ephus (http://scanimage.vidriotechnologies.com/display/ephus/Ephus).
+Dataformat of ephus: .xsg.
+
+Metadata was annotated in a nested matlab structure format (dfEla) and
+parameters of the waveform traces, after averaging per condition, were extracted
+using bcj_XPSCParam function in Matlab.
+see section 'Source data' for comments on dataformat and structure.
+
+Exceptions are:
+1) cell-attached data (Figure 6), data: 'dataStrucSpike.mat'
+2) rebuttal experiments, data: 'data_rebuttal_experiments.mat'
+    analysis: 'analyze_rebuttal_experiments.m'
+
+
+William T Birdsong:
+Raw waveform traces were obtained from whole-cell patch-clamp recordings using
+Axograph X (https://axograph.com/download/axograph). Condition-based averages
+were generated and saved for analysis.
+Dataformat of the averaged waveform traces: .axgx.
+
+Metadata was user-annotated in a .csv spreadsheet using the template:
+axgx_metadata_template.xlsx (see repository). Subsequently, bcj_wranglAxgx
+function in matlab was used to extract averaged waveform traces and metadata
+from the axgx and corresponding csv files. Data was saved and appended to
+the nested matlab structure format used by Bart C Jongbloets (dfEla).
+
+The nested matlab structure dfEla was then saved as .csv, after removal of the
+nested data. This dataset ('rawdataset.csv') was used for analysis in R.
